@@ -3,11 +3,12 @@ import requests
 import time
 import logging
 import urllib
+import os
 
 logging.basicConfig(level=logging.DEBUG,
                     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 
-TOKEN = ""
+TOKEN = os.environ.get('TOKEN', None)
 URL = "https://api.telegram.org/bot{}/".format(TOKEN)
 
 
