@@ -1,6 +1,9 @@
 import json 
 import requests
 import time
+import logging
+logging.basicConfig(level=logging.DEBUG,
+                    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 
 TOKEN = ""
 URL = "https://api.telegram.org/bot{}/".format(TOKEN)
