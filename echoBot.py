@@ -22,11 +22,12 @@ def get_json_from_url(url):
 
 
 def get_updates(offset=None):
-    url = URL + "getUpdates"
+    url = URL + "getUpdates?timeout=100"
     if offset:
-        url += "?offset={}".format(offset)
+        url += "&offset={}".format(offset)
     js = get_json_from_url(url)
     return js
+
 
 def get_last_chat_id_and_text(updates):
     num_updates = len(updates["result"])
