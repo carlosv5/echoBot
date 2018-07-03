@@ -6,7 +6,7 @@ import urllib
 import os
 
 #logging.basicConfig(level=logging.DEBUG,
-                    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+#                    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 
 TOKEN = os.environ.get('TOKEN', None)
 URL = "https://api.telegram.org/bot{}/".format(TOKEN)
