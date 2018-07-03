@@ -5,7 +5,7 @@ import logging
 import urllib
 import os
 
-logging.basicConfig(level=logging.DEBUG,
+#logging.basicConfig(level=logging.DEBUG,
                     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 
 TOKEN = os.environ.get('TOKEN', None)
